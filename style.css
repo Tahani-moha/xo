@@ -1,0 +1,68 @@
+#all{
+    display :grid;
+    justify-content:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  
+  }
+ body {
+ margin: 45px;
+ display: flex ;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ justify-content: center ;
+ background-image: url(" oo https://image.shutterstock.com/image-vector/seamless-vector-pattern-monochromatic-xoxo-600w-663785359.jpg");
+ background-repeat: repeat;
+ background-size: 40%;
+ }
+ .title{
+   margin: 0%;
+   font-size: 25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background: rgb(255, 255, 255);
+ }
+ #card{
+   border:  white;
+   padding: 50px ;
+   position: relative;
+   margin-top:-50px ;
+
+}
+ #board {
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin-top: 50px;
+
+
+
+ }
+ .cell{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ 
+ p{
+   text-align: center;
+ }
+ button{ 
+  border-radius:50px ;
+
+
+ }
+ #parWinner {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: white;
+
+}
