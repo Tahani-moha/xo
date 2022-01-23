@@ -166,7 +166,7 @@ $(document).ready(function () {
       for (let i = 0; i < cells.length; i++) {
         if ($(cells[i]).text() ==='') {
           $(cells[i]).off('click');
-         // $(cells[i]).removeEventListener();
+        
         }
         
       }
@@ -174,7 +174,7 @@ $(document).ready(function () {
   
    // cell.preventDefault();    // يخلي الفاير يكتب بس 
    /*  click.preventDefault(); */ // يخلي الفاير يكتب بس 
-  // cell.removeEventListener();
+    /* cell.removeEventListener();
 
   //unClick()
 
@@ -189,46 +189,4 @@ $(document).ready(function () {
    );
 */ 
 
-// });
-
-
-
-/*
-  STEP 1: Grid Layout [HTML + CSS]
-    HTML: use div with id 'board' and 9 div with class 'cell'
-    CSS: style grid "board"
-    CSS: style width & height "cell"
-    HTML: add div id="all"
-    HTML: add par "PLAYER TURN:" id='turn'
-    HTML: add par "WIN" id='winner'
-    HTML: add button "Play Again" id='restart'
-    CSS: #all display: grid; && justify-content: center;
-    CSS: p text-align: center;    
-
-  STEP 2: When the player click on one of the cell => Show X || O
-    show click X
-    show click X || O (turn variable to switch between turns)
-    Show the turn show turn to which player => PLAYER TURN: X || O
-    Extra: 
-      Invalid move => background red || can't click 
-
-  NOW. when click on the button 'Play Again' the game will restart or the page will refresh (restart the game)
-
-  STEP 3: When the player select 3 Win (check the winner)
-    Build the logic to check if a player win or not [horizontal, vertical, or diagonal]
-    Call the function check winner on each turn. if so change the winner p to the player who win
-    if not don't do anything
-
-  STEP 4: When a player win 
-    Show who is the winner
-    Hide the 'turn' p
-    Show button say "Play Again" (restart the game)
-    Make this button restart the game (refresh the page)
-    
-  Extra:
-    Block clicked on the cell after a player win
-    Enhance the design CSS
-    Add tone when the player win
-    Use Animation
-    Change the background in the path that the winner win in
-*/ 
+ });
